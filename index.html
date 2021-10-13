@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>JavaScript Comparisons Example</h2>
+<p>Enter your Age: </p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Check</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let licensed;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    licensed = "You Enter Wrong Credentials! ";
+  } else {
+    licensed = (age < 18) ? "Sorry! You aren't allowed " : "You are Allowed ";
+  }
+  document.getElementById("demo").innerHTML = licensed + " to Drive on Road";
+}
+</script>
+
+</body>
+</html>
